@@ -1,0 +1,8 @@
+<mat-nav-list>
+  <mat-list-item *ngFor="let event of events" (click)="selected(event)">
+    <div class="time">{{event.time}}</div>
+    <div class="clubName">{{event.clubName}}</div>
+    <div class="clubTitle">{{event.title | uppercase}}</div>
+    <button>Check</button>
+  </mat-list-item>
+</mat-nav-list>
